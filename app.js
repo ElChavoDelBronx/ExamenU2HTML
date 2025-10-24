@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         console.log(dataLocal);
         const jsonParse = JSON.parse(dataLocal);
         console.log('Datos Parseados');
-        console.log(company);
-        inputNameCompany.value = company.nameCompany;
-        inputNameLink.value = company.nameLink;
-        inputPhone.value = company.phone;
+        console.log(jsonParse);
+        inputNameCompany.value = jsonParse.nameCompany;
+        inputNameLink.value = jsonParse.nameLink;
+        inputPhone.value = jsonParse.phone;
 
     }
 });
